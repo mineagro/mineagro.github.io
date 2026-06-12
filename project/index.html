@@ -1,13 +1,598 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Proyecto Minero-Agrícola — MINEAGRO</title>
+    <meta name="description" content="Estructura, funciones, tareas pendientes y hoja de ruta del proyecto minero-agrícola de MINEAGRO en Santa Cruz, Bolivia.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Bienvenido al proyecto</h1>
+
+    <!-- ===== Fondo decorativo global ===== -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--blue" aria-hidden="true"></div>
+
+    <!-- ===== Navbar ===== -->
+    <header class="nav" id="nav">
+        <div class="nav__inner container">
+            <a href="../index.html" class="nav__brand">
+                <img src="../images/logo.png" alt="Logo MINEAGRO" class="nav__logo">
+                <span class="nav__name">MINE<span class="accent">AGRO</span></span>
+            </a>
+            <nav class="nav__links" id="navLinks">
+                <a href="#resumen" class="nav__link is-active">Resumen</a>
+                <a href="#concesion" class="nav__link">Concesión</a>
+                <a href="#maquinaria" class="nav__link">Maquinaria</a>
+                <a href="#sociedad" class="nav__link">Sociedad</a>
+                <a href="#equipo" class="nav__link">Funciones</a>
+                <a href="#pendientes" class="nav__link">Pendientes</a>
+                <a href="#ruta" class="nav__link">Hoja de ruta</a>
+                <a href="#anexos" class="nav__link">Anexos</a>
+                <div class="lang-switch" aria-label="Idioma">
+                    <span class="lang-switch__option is-active"><span class="lang-switch__flag">🇧🇴</span>ES</span>
+                    <a href="pt.html" class="lang-switch__option" lang="pt-BR" hreflang="pt-BR" title="Ver em português"><span class="lang-switch__flag">🇧🇷</span>PT</a>
+                </div>
+                <a href="../index.html" class="btn btn--small btn--ghost">← Sitio principal</a>
+            </nav>
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== Hero del proyecto ===== -->
+        <section class="page-hero" id="resumen">
+            <div class="container">
+                <p class="hero__eyebrow reveal">📋 Documento interno de trabajo · Actualizado 12/06/2026</p>
+                <h1 class="page-hero__title reveal">
+                    Proyecto <span class="gradient-text">Minero-Agrícola</span><br>Santa Cruz, Bolivia
+                </h1>
+                <p class="hero__subtitle reveal">
+                    Plan integral para adquirir una propiedad agrícola con potencial aurífero,
+                    obtener la concesión minera ante la AJAM, importar maquinaria pesada desde Brasil
+                    y operar bajo una estructura societaria y financiera sólida desde el día uno.
+                </p>
+                <div class="hero__stats reveal">
+                    <div class="stat">
+                        <span class="stat__value"><span data-count="4">0</span></span>
+                        <span class="stat__label">Frentes de trabajo</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value"><span data-count="65">0</span>%</span>
+                        <span class="stat__label">Saldo para el explotador</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value"><span data-count="0">0</span>%</span>
+                        <span class="stat__label">Arancel de la maquinaria</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value"><span data-count="10">0</span></span>
+                        <span class="stat__label">Tareas pendientes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Cómo funciona el proyecto ===== -->
+        <section class="section" id="modelo">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__tag">El modelo</span>
+                    <h2 class="section__title">Cuatro frentes, <span class="gradient-text">un solo proyecto</span></h2>
+                    <p class="section__lead">
+                        Para que el proyecto sea exitoso los cuatro frentes deben avanzar en paralelo:
+                        ninguno funciona sin los otros tres.
+                    </p>
+                </div>
+                <div class="about-grid">
+                    <article class="glass-card reveal">
+                        <div class="glass-card__icon">⛏</div>
+                        <h3>1 · Concesión minera</h3>
+                        <p>Verificar cuadrículas libres en el Catastro Minero de la AJAM y obtener la
+                        concesión de exploración. Sin concesión no hay operación legal posible.</p>
+                    </article>
+                    <article class="glass-card reveal">
+                        <div class="glass-card__icon">🚜</div>
+                        <h3>2 · Maquinaria</h3>
+                        <p>Importar la excavadora desde Brasil (San Matías o San Ramón) cumpliendo
+                        los requisitos de exportación brasileños y de internación boliviana.</p>
+                    </article>
+                    <article class="glass-card reveal">
+                        <div class="glass-card__icon">🏛</div>
+                        <h3>3 · Estructura societaria</h3>
+                        <p>Empresa boliviana con NIT y empadronamiento en Aduana, más un vehículo de
+                        inversión en el exterior para canalizar el capital de los socios.</p>
+                    </article>
+                    <article class="glass-card reveal">
+                        <div class="glass-card__icon">🌾</div>
+                        <h3>4 · Propiedad agrícola</h3>
+                        <p>Comprar el terreno (completo o solo la fracción con presencia de oro) con
+                        crédito bancario y 20% de aporte documentado de los socios.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Concesión minera ===== -->
+        <section class="section section--tech" id="concesion">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__tag">⛏ Frente 1 · AJAM</span>
+                    <h2 class="section__title">Concesión <span class="gradient-text gradient-text--blue">minera</span></h2>
+                    <p class="section__lead">
+                        El subsuelo y los recursos en ríos pertenecen al Estado, no al dueño de la
+                        superficie. Cualquier persona puede solicitar la concesión, pero es más fácil
+                        y conveniente ser primero propietario del terreno agrícola.
+                    </p>
+                </div>
+
+                <ol class="steps">
+                    <li class="step reveal">
+                        <span class="step__num">01</span>
+                        <div>
+                            <h4>Consulta al Catastro Minero</h4>
+                            <p>Verificar en la AJAM si las cuadrículas de interés ya están adjudicadas.
+                            Requiere enviar provincia, localidad y cantidad estimada de cuadrículas.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step__num">02</span>
+                        <div>
+                            <h4>Concesión de exploración</h4>
+                            <p>Si las cuadrículas están libres, se solicita la concesión de exploración
+                            con un plazo de <strong>2 años</strong>.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step__num">03</span>
+                        <div>
+                            <h4>Plan de exploración</h4>
+                            <p>Debe presentarse antes del vencimiento; si no se presenta, la concesión
+                            <strong>caduca automáticamente</strong>.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step__num">04</span>
+                        <div>
+                            <h4>Explotación</h4>
+                            <p>Aprobado el plan, se pasa a explotación por plazo indefinido, sujeto al
+                            pago de la patente minera.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step__num">05</span>
+                        <div>
+                            <h4>Contrato y ratificación</h4>
+                            <p>El contrato administrativo lo firma la AJAM y se remite al Poder
+                            Legislativo para su ratificación.</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="alert reveal">
+                    <span class="alert__icon">⚠️</span>
+                    <div>
+                        <h4>Explotar sin concesión es un delito penal</h4>
+                        <p>La AJAM monitorea con imágenes satelitales. Operar sin autorización expone al
+                        proyecto a sanciones penales y extorsión. <strong>No se hará bajo ningún concepto:</strong>
+                        primero la concesión, después la máquina en el terreno.</p>
+                    </div>
+                </div>
+
+                <div class="table-wrap reveal">
+                    <h3 class="table-title">Modelo de reparto vigente en la zona <span class="table-note">(valores aproximados, negociables caso a caso)</span></h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr><th>Concepto</th><th>Porcentaje</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Al dueño del terreno agrícola</td><td>15%</td></tr>
+                            <tr><td>Al titular de la concesión minera</td><td>20%</td></tr>
+                            <tr><td><strong>Total costo</strong></td><td><strong>35%</strong></td></tr>
+                            <tr class="data-table__highlight"><td><strong>Saldo para el explotador (maquinaria)</strong></td><td><strong>65%</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Maquinaria e importación ===== -->
+        <section class="section" id="maquinaria">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__tag">🚜 Frente 2 · Importación</span>
+                    <h2 class="section__title">Maquinaria desde <span class="gradient-text">Brasil</span></h2>
+                    <p class="section__lead">
+                        La excavadora ya está identificada, pagada y libre de deudas en Brasil.
+                        El desafío ahora es la internación legal a Bolivia por San Matías o San Ramón.
+                    </p>
+                </div>
+
+                <div class="split">
+                    <div class="reveal">
+                        <article class="doc-card">
+                            <span class="doc-card__badge">Equipo disponible</span>
+                            <h3>Excavadora John Deere 200G</h3>
+                            <ul class="spec-list">
+                                <li><span>Año</span><strong>2021</strong></li>
+                                <li><span>Peso</span><strong>21 toneladas</strong></li>
+                                <li><span>Horas trabajadas</span><strong>4.268,6 h</strong></li>
+                                <li><span>Giro de estructura</span><strong>360°</strong></li>
+                                <li><span>Valor de factura (NF-e 7844)</span><strong>R$ 627.648,00</strong></li>
+                                <li><span>Estado</span><strong class="accent">Quitada — libre de deudas (oct. 2025)</strong></li>
+                            </ul>
+                            <p class="doc-card__note">Documentación en mano: nota fiscal NF-e Nº 7844 y
+                            declaración de quitación del vendedor (SP Máquinas, Várzea Grande, MT).</p>
+                        </article>
+                    </div>
+                    <div class="reveal">
+                        <article class="doc-card doc-card--green">
+                            <span class="doc-card__badge">Costo tributario estimado</span>
+                            <h3>Partida arancelaria 8429.52.00.00</h3>
+                            <ul class="spec-list">
+                                <li><span>Clasificación</span><strong>Excavadora con estructura giratoria 360°</strong></li>
+                                <li><span>Gravamen arancelario (GA)</span><strong class="accent">0%</strong></li>
+                                <li><span>IVA</span><strong>15% sobre el valor CIF Frontera</strong></li>
+                            </ul>
+                            <p class="doc-card__note">Como <strong>bien de capital</strong> puede acceder a la
+                            exención de IVA vigente hasta el <strong>31 de diciembre de 2026</strong>. Confirmación
+                            final de costos en curso con el despachante de aduana.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <h3 class="sub-title reveal">Requisitos de internación (según el asesor legal y el despachante)</h3>
+                <ul class="check-list">
+                    <li class="reveal"><strong>Factura / documento de exportación en Brasil.</strong> Una empresa certificadora
+                    (estatal o privada) debe emitir el documento de exportación con los datos de la máquina,
+                    su partida arancelaria brasileña y el destino: Santa Cruz, Bolivia.</li>
+                    <li class="reveal"><strong>Destinatario definido.</strong> El documento de exportación debe indicar a qué
+                    persona o empresa boliviana viene destinada la máquina.</li>
+                    <li class="reveal"><strong>Importador empadronado.</strong> El importador en Bolivia debe tener NIT y estar
+                    registrado (empadronado) en la Aduana Nacional y en Impuestos Nacionales.</li>
+                    <li class="reveal"><strong>Importar a nombre de la empresa,</strong> no a título personal — recomendación
+                    expresa de la reunión.</li>
+                    <li class="reveal"><strong>Elegir régimen:</strong> importación definitiva, o admisión temporal por 2 años
+                    (con fianza/garantía ante la Aduana y posibilidad de cambio de régimen).</li>
+                    <li class="reveal"><strong>Documento de compra en Brasil.</strong> Definir a nombre de quién se compra y qué
+                    documento de compra-venta se presentará ante la aduana.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== Estructura societaria ===== -->
+        <section class="section section--tech" id="sociedad">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__tag">🏛 Frente 3 · Societario y financiero</span>
+                    <h2 class="section__title">Estructura <span class="gradient-text gradient-text--blue">desde el inicio</span></h2>
+                    <p class="section__lead">
+                        Recomendación central de la reunión: no manejar el negocio de forma artesanal.
+                        Contratos, facturas entre empresas y planificación tributaria desde el arranque
+                        evitan costos legales, sanciones e impuestos imprevistos.
+                    </p>
+                </div>
+                <div class="tech-grid">
+                    <article class="tech-card reveal">
+                        <span class="tech-card__num">01</span>
+                        <div class="tech-card__icon">🌐</div>
+                        <h3>Vehículo de inversión exterior</h3>
+                        <p>Empresa en el exterior (USD 6.000–8.000 bien estructurada) para canalizar el
+                        capital de los socios, justificar remesas de utilidades y proteger el patrimonio.
+                        Evitar LLC en EE.UU. Estructuración a cargo de Álvaro.</p>
+                    </article>
+                    <article class="tech-card reveal">
+                        <span class="tech-card__num">02</span>
+                        <div class="tech-card__icon">🏦</div>
+                        <h3>Financiamiento de la propiedad</h3>
+                        <p>Crédito bancario para la compra del terreno; los socios aportan el 20% inicial
+                        como aporte social. Cada socio debe justificar documentalmente su aporte.</p>
+                    </article>
+                    <article class="tech-card reveal">
+                        <span class="tech-card__num">03</span>
+                        <div class="tech-card__icon">🤝</div>
+                        <h3>Inversor brasilero</h3>
+                        <p>Aportaría capital directamente a la empresa exterior, evitando el riesgo de
+                        tipo de cambio y la bancarización local. Falta reunión para presentar la propuesta
+                        y confirmar su participación en el oro.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Funciones / equipo ===== -->
+        <section class="section" id="equipo">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__tag">👥 Funciones</span>
+                    <h2 class="section__title">Quién hace <span class="gradient-text">qué</span></h2>
+                    <p class="section__lead">
+                        Responsabilidades asignadas en la reunión del 12/06/2026.
+                    </p>
+                </div>
+                <div class="about-grid">
+                    <article class="glass-card reveal">
+                        <div class="glass-card__icon">🗺</div>
+                        <h3>Moso Paz</h3>
+                        <p>Enlace en terreno: datos de provincia, localidad y cuadrículas para la cotización
+                        AJAM. Consultar al contacto de Montero quién es el titular de la concesión en el
+                        modelo 15%/20%.</p>
+                    </article>
+                    <article class="glass-card reveal">
+                        <div class="glass-card__icon">⚙</div>
+                        <h3>Ruddy Paz</h3>
+                        <p>Coordinación general del proyecto: datos de cuadrículas,
+                        seguimiento de tareas, documentación y plataforma tecnológica de MINEAGRO.</p>
+                    </article>
+                    <article class="glass-card reveal">
+                        <div class="glass-card__icon">📜</div>
+                        <h3>Álvaro</h3>
+                        <p>Asesor legal-tributario (ex Mossack Fonseca). Estructuración del vehículo de
+                        inversión exterior y cotización de la importación de maquinaria con base en las
+                        facturas comerciales.</p>
+                    </article>
+                    <article class="glass-card reveal">
+                        <div class="glass-card__icon">🇧🇷</div>
+                        <h3>Socio brasilero</h3>
+                        <p>Enviar las facturas comerciales de la maquinaria, gestionar el documento de
+                        exportación en Brasil y aportar capital a la empresa exterior.</p>
+                    </article>
+                    <article class="glass-card reveal">
+                        <div class="glass-card__icon">📈</div>
+                        <h3>Financista <span class="pill pill--amber">por contratar</span></h3>
+                        <p>Elaborar el plan de negocio con flujo de caja y estimado de producción —
+                        requisito para el crédito bancario y para ordenar la inversión.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Tareas pendientes ===== -->
+        <section class="section section--tech" id="pendientes">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__tag">✅ Seguimiento</span>
+                    <h2 class="section__title">Tareas <span class="gradient-text gradient-text--blue">pendientes</span></h2>
+                    <p class="section__lead">
+                        Consolidado de la reunión y de las gestiones aduaneras posteriores.
+                    </p>
+                </div>
+                <div class="table-wrap reveal">
+                    <table class="data-table data-table--tasks">
+                        <thead>
+                            <tr><th>#</th><th>Tarea</th><th>Responsable</th><th>Estado</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Enviar provincia, localidad y cantidad estimada de cuadrículas para la cotización AJAM</td>
+                                <td>Ruddy Paz</td>
+                                <td><span class="pill pill--amber">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Enviar facturas comerciales de la maquinaria (PDF) a Álvaro para cotizar la importación</td>
+                                <td>Socio brasilero</td>
+                                <td><span class="pill pill--green">En curso — NF 7844 y quitación ya en mano</span></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Consultar al contacto de Montero quién es el titular de la concesión en el modelo 15%/20%</td>
+                                <td>Moso Paz</td>
+                                <td><span class="pill pill--amber">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Reunión con el inversor brasilero: propuesta de estructura exterior y participación en el oro</td>
+                                <td>Moso Paz</td>
+                                <td><span class="pill pill--amber">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Contratar financista para el plan de negocio con flujo de caja y estimado de producción</td>
+                                <td>Por definir</td>
+                                <td><span class="pill pill--amber">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Evaluar con Álvaro la constitución de la empresa exterior como vehículo de inversión</td>
+                                <td>Carlos / Álvaro</td>
+                                <td><span class="pill pill--amber">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Definir si se compra la propiedad completa o solo la fracción con presencia de oro</td>
+                                <td>Moso Paz</td>
+                                <td><span class="pill pill--amber">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Definir a nombre de quién sale la importación y qué documento de compra se hará en Brasil</td>
+                                <td>Moso Paz</td>
+                                <td><span class="pill pill--red">Bloqueante</span></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Gestionar en Brasil el documento de exportación certificado (datos de máquina, partida arancelaria, destino Santa Cruz – Bolivia y destinatario con NIT)</td>
+                                <td>Socio brasilero / despachante</td>
+                                <td><span class="pill pill--red">Bloqueante</span></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Confirmar con el despachante de aduana el costo final de internación de la maquinaria</td>
+                                <td>Asesor legal / despachante</td>
+                                <td><span class="pill pill--green">En curso — respuesta estimada la próxima semana</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Hoja de ruta para el éxito ===== -->
+        <section class="section" id="ruta">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__tag">🚀 Hoja de ruta</span>
+                    <h2 class="section__title">Qué hace falta para que el proyecto <span class="gradient-text">sea exitoso</span></h2>
+                    <p class="section__lead">
+                        Próximo paso inmediato: conseguir los datos de cuadrículas → firmar el contrato
+                        de servicios con NDA → consultar el Catastro Minero (AJAM).
+                    </p>
+                </div>
+
+                <ol class="steps steps--phases">
+                    <li class="step reveal">
+                        <span class="step__num">F1</span>
+                        <div>
+                            <h4>Base legal y societaria</h4>
+                            <p>Constituir la empresa boliviana con NIT, empadronarla en Aduana e Impuestos
+                            Nacionales, y definir con Álvaro el vehículo de inversión exterior. Todo lo
+                            demás depende de esto.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step__num">F2</span>
+                        <div>
+                            <h4>Concesión asegurada</h4>
+                            <p>Datos de cuadrículas, NDA, consulta al Catastro Minero y solicitud de la
+                            concesión de exploración. Nunca mover una máquina al terreno antes de este paso.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step__num">F3</span>
+                        <div>
+                            <h4>Maquinaria internada</h4>
+                            <p>Documento de exportación en Brasil + despachante + régimen elegido.
+                            Apuntar a cerrar antes del <strong>31/12/2026</strong> para aprovechar la exención
+                            de IVA como bien de capital.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step__num">F4</span>
+                        <div>
+                            <h4>Financiamiento ordenado</h4>
+                            <p>Financista contratado, plan de negocio con flujo de caja, crédito para la
+                            propiedad con 20% de aporte documentado de cada socio.</p>
+                        </div>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step__num">F5</span>
+                        <div>
+                            <h4>Operación y reparto</h4>
+                            <p>Explotación bajo el modelo 15/20/65, con contratos y facturas entre empresas,
+                            pago de patente minera y monitoreo de producción.</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <h3 class="sub-title reveal">Factores críticos de éxito</h3>
+                <ul class="check-list check-list--critical">
+                    <li class="reveal"><strong>Legalidad primero:</strong> jamás explotar sin concesión — es delito penal y la AJAM monitorea por satélite.</li>
+                    <li class="reveal"><strong>Todo a nombre de la empresa:</strong> importación, contratos y compras; nada a título personal.</li>
+                    <li class="reveal"><strong>Plazos tributarios:</strong> la exención de IVA para bienes de capital vence el 31 de diciembre de 2026.</li>
+                    <li class="reveal"><strong>Capital documentado:</strong> cada aporte de socio con respaldo documental desde el inicio.</li>
+                    <li class="reveal"><strong>Confidencialidad:</strong> NDA firmado antes de compartir datos de cuadrículas y del yacimiento.</li>
+                    <li class="reveal"><strong>Nada artesanal:</strong> contratos, facturas y planificación tributaria profesional desde el arranque.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== Anexos ===== -->
+        <section class="section section--tech" id="anexos">
+            <div class="container">
+                <div class="section__head reveal">
+                    <span class="section__tag">📎 Anexos</span>
+                    <h2 class="section__title">Documentos de <span class="gradient-text gradient-text--blue">respaldo</span></h2>
+                    <p class="section__lead">
+                        Respaldo documental de la excavadora John Deere 200G: factura de compra,
+                        liberación de deuda del vendedor y registro fotográfico del equipo.
+                    </p>
+                </div>
+                <div class="annex-grid">
+                    <article class="annex-card reveal">
+                        <a href="../images/excabadoraJD.jpg" target="_blank" rel="noopener"
+                           class="annex-card__media" style="--img: url('../images/excabadoraJD.jpg');"
+                           aria-label="Ver foto de la excavadora en tamaño completo"></a>
+                        <div class="annex-card__body">
+                            <span class="annex-card__type">Fotografía</span>
+                            <h3>Excavadora John Deere 200G</h3>
+                            <p>Registro fotográfico del equipo en Brasil. Año 2021, 21 toneladas,
+                            chasis 1F9200GXHMD020252.</p>
+                            <a href="../images/excabadoraJD.jpg" target="_blank" rel="noopener" class="btn btn--ghost btn--small">Ver foto →</a>
+                        </div>
+                    </article>
+                    <article class="annex-card reveal">
+                        <a href="../images/factura_venta_JD.pdf" target="_blank" rel="noopener"
+                           class="annex-card__media annex-card__media--doc"
+                           aria-label="Abrir factura de venta en PDF">🧾</a>
+                        <div class="annex-card__body">
+                            <span class="annex-card__type">PDF · Nota fiscal</span>
+                            <h3>Factura de venta NF-e Nº 7844</h3>
+                            <p>Nota fiscal electrónica emitida por SP Máquinas (Várzea Grande, MT)
+                            el 17/10/2023 por R$ 627.648,00.</p>
+                            <a href="../images/factura_venta_JD.pdf" target="_blank" rel="noopener" class="btn btn--ghost btn--small">Abrir documento →</a>
+                        </div>
+                    </article>
+                    <article class="annex-card reveal">
+                        <a href="../images/declaracion_liberacion_deuda_JD.pdf" target="_blank" rel="noopener"
+                           class="annex-card__media annex-card__media--doc"
+                           aria-label="Abrir declaración de liberación de deuda en PDF">✅</a>
+                        <div class="annex-card__body">
+                            <span class="annex-card__type">PDF · Declaración de quitación</span>
+                            <h3>Liberación de deuda</h3>
+                            <p>Declaración del vendedor (15/10/2025) que certifica que la máquina
+                            está totalmente pagada y libre de deudas.</p>
+                            <a href="../images/declaracion_liberacion_deuda_JD.pdf" target="_blank" rel="noopener" class="btn btn--ghost btn--small">Abrir documento →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="section section--cta" id="contacto">
+            <div class="container">
+                <div class="cta reveal">
+                    <h2 class="cta__title">¿Avances o novedades del <span class="gradient-text">proyecto?</span></h2>
+                    <p class="cta__text">Coordinemos por WhatsApp para actualizar tareas, documentos y próximos pasos.</p>
+                    <a href="https://wa.me/59175666929?text=Hola%2C%20tengo%20novedades%20sobre%20el%20proyecto%20minero" target="_blank" rel="noopener" class="btn btn--solid btn--large">Escribir por WhatsApp →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <img src="../images/logo.png" alt="Logo MINEAGRO" class="footer__logo">
+                <div>
+                    <span class="nav__name">MINE<span class="accent">AGRO</span></span>
+                    <p class="footer__tagline">Proyecto Minero-Agrícola</p>
+                </div>
+            </div>
+            <nav class="footer__links">
+                <a href="#concesion">Concesión</a>
+                <a href="#maquinaria">Maquinaria</a>
+                <a href="#pendientes">Pendientes</a>
+                <a href="#anexos">Anexos</a>
+                <a href="pt.html" lang="pt-BR" hreflang="pt-BR">Versão em português</a>
+                <a href="../index.html">Sitio principal</a>
+            </nav>
+            <p class="footer__copy">© <span id="year"></span> MINEAGRO. Documento interno.</p>
+        </div>
+    </footer>
+
     <script src="index.js"></script>
 </body>
 </html>
